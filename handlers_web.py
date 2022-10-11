@@ -41,7 +41,7 @@ async def checkout_process(pre_checkout_query: PreCheckoutQuery):
 
 
 async def successful_payment(msg: Message):
-    await bot.send_message(msg.from_user.id, '<b>Your order is ready</b>! Our couriers are already on their way to your address!🚴', reply_markup=ReplyKeyboardRemove())
+    await bot.send_message(msg.from_user.id, f'<b>Вы успешно сделали заказ</b>! Наши курьеры доставят ваш заказ в течении 1-2 дней!🚴', reply_markup=ReplyKeyboardRemove())
 
 
 async def lzt_dialogflow(message: Message):
